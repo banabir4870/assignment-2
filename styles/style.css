@@ -143,6 +143,47 @@ body{
     background-color: transparent;
 }
 
+/* about style */
+.about-container{
+    padding: 50px 200px;
+    text-align: center;
+}
+
+.about-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.about-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+hr{
+    border: 1px solid rgba(128, 128, 128, 0.144);
+    margin-bottom: 80px;
+}
+
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+.card-details{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
 
 
 
@@ -242,4 +283,27 @@ body{
         display: block;
     }
 
+    /* about */
+    .about-container{
+        padding: 40px 20px;
+    }
+
+    .about-title{
+        font-size: 2rem;
+    }
+
+    .about-description{
+        margin-bottom: 40px;
+    }
+    hr{
+        margin-bottom: 40px;
+    }
+
+    .about-cards{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+    .card-title{
+        font-size: 2.5rem;
+    }
 }
