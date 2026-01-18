@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* font style */
+.font-inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+/* full body background color */
+body{
+    background-color: #1A0B2E;
+}
