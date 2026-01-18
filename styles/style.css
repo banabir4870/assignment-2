@@ -89,13 +89,14 @@ body{
 
 .mic-container{
     margin-bottom: 40px;
+    position: relative;
 }
 
 
 .mic{
     position: absolute;
-    top: 320px;
-    left: 900px;
+    top: 90px;
+    left: 120px;
 }
 
 .new-badge{
@@ -106,8 +107,9 @@ body{
     padding: 8px 16px;
     background-color: #00FF88;
     border-radius: 10000px;
-    top: 270px;
-    left: 1060px;
+    top: 20px;
+    left: 250px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 }
 
 .banner-title{
@@ -212,6 +214,7 @@ body{
 
     .mic-container{
         margin-bottom: 24px;
+        position: relative;
     }
 
     .mic-circle{
@@ -222,14 +225,14 @@ body{
     .mic{
         width: 60px;
         height: 80px;
-        top: 200px;
-        left: 160px;
+        top: 60px;
+        left: 70px;
     }
 
     .new-badge{
         font-size: 1rem;
-        top: 140px;
-        left: 220px;
+        top: 20px;
+        left: 130px;
     }
     .banner-title{
         font-size: 2.5rem;
