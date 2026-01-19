@@ -246,7 +246,117 @@ hr{
     font-weight: 400;
     color: #FFFFFF;
 }
+/* episode section */
+.episodes{
+    padding: 120px 200px;
+}
 
+.episodes-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.episode-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 30px;
+}
+.episode-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.video-details{
+    padding: 24px;
+    background-color: #250D44;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-grow: 1;
+}
+
+.video-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.video-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.time{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00FF88;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/*host-challenge-section*/
+.host-container{
+    margin-top: 120px;
+}
+
+.host-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-host{
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    align-items: center;
+}
+
+.host-name{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.host-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.host-social{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.host-social>img{
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
 
 
 
@@ -395,5 +505,50 @@ hr{
     .why-card-title{
         font-size: 1.2rem;
         margin-bottom: 8px;
+    }
+
+    /* episodes */
+    .episodes{
+        padding: 40px 20px;
+    }
+    .episodes-title{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .episode-cards{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        gap: 16px;
+    }
+    .video-title{
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+
+    /* host */
+    .host-container{
+        margin-top: 60px;
+    }
+    .host-title{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .about-host{
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+        border-radius: 24px;
+        text-align: center;
+    }
+
+    .host-name{
+        font-size: 1.5rem;
+    }
+
+    .host-social{
+        display: flex;
+        justify-content: center;
+        gap: 8px;
     }
 }
