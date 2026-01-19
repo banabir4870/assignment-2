@@ -3,6 +3,40 @@
     padding: 0px;
 }
 
+
+/* keyframe for animation */
+@keyframes ratings{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 100px;
+    }
+    50%{
+        left: 0;
+    }
+    100%{
+        left: -100px;
+    }
+}
+
+/* small device keyframe for animation */
+@keyframes ratings-small{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 20px;
+    }
+    50%{
+        left: 0;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+
 /* font style */
 .font-inter{
   font-family: "Inter", sans-serif;
@@ -49,7 +83,7 @@ body{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #ffffff9c;
 }
 
 .btn{
@@ -66,6 +100,12 @@ body{
     background: linear-gradient(
         30deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%
     );
+    transition: transform 2s ease-in-out;
+}
+
+/* challenge part */
+.btn:hover{
+    transform: scale(1.2) rotate(360deg);
 }
 
 .hamburger{
@@ -122,7 +162,7 @@ body{
 .banner-description{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
     margin-bottom: 24px;
 }
 
@@ -143,6 +183,11 @@ body{
     color: #00FF88;
     cursor: pointer;
     background-color: transparent;
+    transition: transform 2s ease-in-out;
+}
+/* challenge part */
+.subscribe-btn:hover{
+    transform: scale(1.2) rotate(360deg);
 }
 
 /* about style */
@@ -161,7 +206,7 @@ body{
 .about-description{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
     margin-bottom: 80px;
 }
 
@@ -173,6 +218,8 @@ hr{
 .about-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    animation: ratings 2s ease-in-out 0.25s infinite alternate;
 }
 
 .card-title{
@@ -184,7 +231,7 @@ hr{
 .card-details{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
 }
 
 /* why choose style */
@@ -246,7 +293,7 @@ hr{
 .why-card-description{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
 }
 /* episode section */
 .episodes{
@@ -297,7 +344,7 @@ iframe{
 .video-description{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
     margin-bottom: 12px;
 }
 
@@ -342,7 +389,7 @@ iframe{
 .host-description{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
     margin-bottom: 16px;
 }
 
@@ -392,7 +439,7 @@ footer{
 .icons{
     font-size: 1rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #ffffff9c;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -401,35 +448,8 @@ footer{
 .copy-right{
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff9c;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -519,6 +539,7 @@ footer{
     .about-cards{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 40px;
+        animation: ratings-small 2s ease-in-out 0.25s infinite alternate;
     }
     .card-title{
         font-size: 2.5rem;
